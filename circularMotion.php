@@ -585,7 +585,7 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<div class="pages-nav">
+				<div class="pages-nav" id="bottom-pager">
 					<ul class="pager">
 						<li><a href="kinematics.php" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Kinematics Big Five</a></li>
 						<li><a href="oneDimensionalforces.php" class="next-page-btn">Next: Forces<span class="glyphicon glyphicon-chevron-right"></span></a></li>

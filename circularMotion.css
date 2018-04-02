@@ -55,7 +55,7 @@ nav {
 	position: relative;
 	width: 100%;
 	height: 50px;
-	background-color: #333;
+	background-color: var(--main-black-color);
 	padding: 0 !important;
 	z-index: 3 !important;
 }
@@ -68,7 +68,7 @@ nav {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 150%;
-	color: #F1C40F !important;
+	color: var(--main-yellow-color) !important;
 	transition: 0.2s;
 }
 .nav-logo a:hover {
@@ -91,7 +91,7 @@ nav {
 	border-radius: 4px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #F1C40F !important;
+	color: var(--main-yellow-color) !important;
 	margin: 8px 5px 0 0;
 	transition: 0.4s;
 }
@@ -126,7 +126,7 @@ nav {
 }
 #search-bar {
 	width: 100%;
-	background-color: #333;
+	background-color: transparent
 	color: var(--main-yellow-color);
 	border: 1px solid var(--main-yellow-color);
 	border-radius: 3px;
@@ -138,10 +138,10 @@ nav {
 #search-bar:focus {
 	outline: none !important;
 }
-#search-btn {
-	background-color: #333;
+#search-icon {
+	background-color: transparent
 	padding: 8px 10px 5px;
-	color: #F1C40F;
+	color: var(--main-yellow-color);
 	font-size: 1.5rem;
 	position: absolute;
 	border: 0;
@@ -149,7 +149,7 @@ nav {
 	top: 50%;
 	left: 1px;
 	transform:translateY(-50%);
-	z-index: 0;
+	z-index: -1;
 }
 
 
@@ -190,7 +190,7 @@ nav {
 	height: 230px;
 	padding: 10px;
 	overflow-y: auto;
- 	background-color: #333;
+ 	background-color: var(--main-black-color);
   border-radius:0 0 5px 5px;
 }
 
@@ -248,7 +248,7 @@ nav {
 	line-height: 45px;
 	padding: 3px 10px 0;
 }
-.hamburger {
+#hamburger-menu {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -258,8 +258,8 @@ nav {
 	background-color: var(--main-yellow-color);
 	border-radius: 10px;
 }
-.hamburger:before,
-.hamburger:after {
+#hamburger-menu:before,
+#hamburger-menu:after {
 	content: "";
 	position: absolute;
 	width: 40px;
@@ -268,20 +268,20 @@ nav {
 	border-radius: 10px;
 	transition: 0.4s;
 }
-.hamburger:before {
+#hamburger-menu:before {
 	top: -10px;
 }
-.hamburger:after {
+#hamburger-menu:after {
 	top: 10px;
 }
-#icon.active .hamburger:before {
+#icon.active #hamburger-menu:before {
 	top: 0;
 	transform: rotate(45deg);
 }
-#icon.active .hamburger {
+#icon.active #hamburger-menu {
 	background-color: rgba(0,0,0,0);
 }
-#icon.active .hamburger:after {
+#icon.active #hamburger-menu:after {
 	top: 0;
 	transform: rotate(135deg);
 }
@@ -292,7 +292,7 @@ nav {
 	right: -15px;
 	width: 180px;
 	height: auto;
-	background-color: #333;
+	background-color: var(--main-black-color);
 	padding: 5px;
 	border-radius: 5px;
 	z-index: 3000 !important;
@@ -327,7 +327,7 @@ nav {
 	text-decoration: none;
 	text-align: center;
 	font-weight: bold;
-	color: #F1C40F !important;
+	color: var(--main-yellow-color) !important;
 	border-right: 3px solid transparent;
 	border-left: 3px solid transparent;
 	transition: 0.2s;
@@ -346,8 +346,8 @@ nav {
 }
 .vertical-link:hover {
 	border: 0 !important;
-	background-color: #F1C40F !important;
-	color: #333 !important;
+	background-color: var(--main-yellow-color) !important;
+	color: var(--main-black-color) !important;
 	z-index: 4000 !important;
 }
 #click-box {
@@ -426,8 +426,8 @@ a.next-page-btn:hover .glyphicon-chevron-right {
 .time-selection,
 .unit-selection,
 .solve-selection {
-  background: #333 !important;
-  color: #F1C40F !important;
+  background: var(--main-black-color) !important;
+  color: var(--main-yellow-color) !important;
   font-weight: normal !important;
   border-radius: 5px;
   padding: 10px 10px 6px;
@@ -435,8 +435,8 @@ a.next-page-btn:hover .glyphicon-chevron-right {
 }
 /*--- BADGES ---*/
 .badge {
-  color: #333 !important;
-  background-color: #F1C40F !important;
+  color: var(--main-black-color) !important;
+  background-color: var(--main-yellow-color) !important;
   margin-bottom: 3px;
 }
 /*--- END OF BADGES ---*/
@@ -457,15 +457,15 @@ a.next-page-btn:hover .glyphicon-chevron-right {
 .checkmark {
   padding: 3px 10px 5px;
   border-radius: 4px;
-  border: 1.5px solid #F1C40F;
+  border: 1.5px solid var(--main-yellow-color);
 }
 .radio-btn:hover input + .checkmark {
-  background-color: #F1C40F;
-  color: #333;
+  background-color: var(--main-yellow-color);
+  color: var(--main-black-color);
 }
 .radio-btn input:checked + .checkmark {
-  background-color:#F1C40F;
-  color: #333;
+  background-color:var(--main-yellow-color);
+  color: var(--main-black-color);
 }
 .radio-btn input:disabled + .checkmark {
   border: 1.5px solid red;
@@ -473,7 +473,7 @@ a.next-page-btn:hover .glyphicon-chevron-right {
 }
 .radio-btn input:disabled:hover + .checkmark {
   border: 1.5px solid red;
-  background-color: #333;
+  background-color: var(--main-black-color);
   color: red;
   cursor: not-allowed;
 }
@@ -512,7 +512,7 @@ a.next-page-btn:hover .glyphicon-chevron-right {
 	outline: none;
 }
 .yellow-outline {
-  box-shadow: 0 0 2px 2px #F1C40F, 0 0 4px 4px #333 !important;
+  box-shadow: 0 0 2px 2px var(--main-yellow-color), 0 0 4px 4px var(--main-black-color) !important;
   outline: none !important;
 }
 .yellow-outline:focus {
@@ -548,7 +548,7 @@ input[type="radio"] {
   height: 122px;
   border-radius: 4px !important;
   margin: 16px 0;
-  box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px var(--main-black-color);
   overflow: hidden !important;
 }
 #inner-image-container {
@@ -612,18 +612,18 @@ input[type="radio"] {
   height: 6px;
   background-color: #fff;
   border-radius: 2px;
-  border: 1px solid #333;
+  border: 1px solid var(--main-black-color);
   cursor: pointer;
   transition: 0.5s;
 }
 .slide-bar:hover:not(.active-indicator) {
-  background-color: #333;
+  background-color: var(--main-black-color);
 }
 #outer-image-container:hover #slide-bar-indicators {
   opacity: 1;
 }
 .active-indicator {
-  background-color: #F1C40F;
+  background-color: var(--main-yellow-color);
 }
 .#outer-image-container:hover #prev-slide-btn,
 .#outer-image-container:hover #next-slide-btn {
@@ -634,7 +634,7 @@ input[type="radio"] {
   width: 100%;
   height: 122px;
   border-radius: 4px;
-  box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px var(--main-black-color);
 }
 /*--- End of Equation Pics ---*/
 
@@ -672,12 +672,12 @@ input[type="radio"] {
   transition: 0.5s;
 }
 .module-front {
-  color: #F1C40F;
+  color: var(--main-yellow-color);
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background-color: var(--main-black-color);
 }
 .module-back {
   display: flex;
@@ -686,7 +686,7 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  background-color: #F1C40F;
+  background-color: var(--main-yellow-color);
   transform: rotateX(180deg);
 }
 
@@ -745,7 +745,7 @@ input[type="radio"] {
 }
 .img-caption a {
   text-decoration: none;
-  color: #F1C40F;
+  color: var(--main-yellow-color);
   font-weight: bold;
 }
 /*--- END OF ABOVE ---*/
@@ -788,7 +788,7 @@ input[type="radio"] {
     margin: 20px auto 0;
     padding: 10px;
     border-radius: 4px;
-    background-color: #333;
+    background-color: var(--main-black-color);
     text-align: center;
   }
   #conversion-heading {
@@ -813,7 +813,7 @@ input[type="radio"] {
     padding: 8px;
     border: 0;
     background-color: var(--main-yellow-color);
-    color: #333;
+    color: var(--main-black-color);
     font-size: 1.5rem;
     font-weight: bold;
     outline: none;
@@ -825,7 +825,7 @@ input[type="radio"] {
     border-radius: 4px;
     border: 2px solid var(--main-yellow-color);
     color: var(--main-yellow-color);
-    background-color: #333;
+    background-color: var(--main-black-color);
     font-size: 1.4rem;
     outline: none;
   }
@@ -850,7 +850,7 @@ input[type="radio"] {
 }
 
 .modal-footer-btn {
-  background-color: #F1C40F;
+  background-color: var(--main-yellow-color);
   box-shadow: 0 0 15px rgba(0,0,0,0.9);
   border-radius: 8px;
   outline: none;
@@ -886,8 +886,8 @@ input[type="radio"] {
 }
 
 button.accordion {
-    background-color: #333;
-    color: #F1C40F;
+    background-color: var(--main-black-color);
+    color: var(--main-yellow-color);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -901,7 +901,7 @@ button.accordion {
 
 button.accordion:after {
     content: '\002B';
-    color: #F1C40F;
+    color: var(--main-yellow-color);
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -909,7 +909,7 @@ button.accordion:after {
 
 button.accordion.active:after {
     content: "\2212";
-    color: #F1C40F;
+    color: var(--main-yellow-color);
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -929,10 +929,10 @@ button.accordion.active:after {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-.modal-panel input[type="image"] {
+.modal-panel img {
 	display: block;
   width: 70%;
-  height: 50%;
+  height: auto;
   margin: auto;
 }
 .modal-panel p {
@@ -941,8 +941,8 @@ button.accordion.active:after {
 .modal-header-btn {
   float: right;
   text-align: center;
-  color: #F1C40F;
-  background-color: #333;
+  color: var(--main-yellow-color);
+  background-color: var(--main-black-color);
   padding: 0 8px;
   border: 0;
   border-radius: 50%;
@@ -951,8 +951,8 @@ button.accordion.active:after {
   transition: 0.2s;
 }
 .modal-header-btn:hover {
-  background-color:#F1C40F;
-  color: #333;
+  background-color:var(--main-yellow-color);
+  color: var(--main-black-color);
 }
 
 /*--- Calculator Modal ---*/
@@ -994,7 +994,7 @@ button.accordion.active:after {
 	margin-bottom: 5px;
 	border: 0;
 	border-radius: 5px;
-	background: #333;
+	background: var(--main-black-color);
 	outline-color: var(--main-yellow-color);
 	color: var(--main-yellow-color);
 	font-size: 2.5rem;
@@ -1024,7 +1024,7 @@ button.accordion.active:after {
     border: 1px solid var(--main-yellow-color);
     padding: 4px;
     border-radius: 5px;
-    background-color: #333;
+    background-color: var(--main-black-color);
 		outline: none;
 		cursor: pointer;
     font-weight: bold;
@@ -1034,8 +1034,8 @@ button.accordion.active:after {
 }
 .calculator-whole button:hover {
 	background-color: var(--main-yellow-color);
-	border: 1px solid #333;
-    color: #333;
+	border: 1px solid var(--main-black-color);
+    color: var(--main-black-color);
 }
 .calculator-whole button:active {
 	background-color: DarkGray;
@@ -1047,7 +1047,7 @@ button.accordion.active:after {
 #radians-indicator, #degrees-indicator {
 	width: 7px;
 	height: 7px;
-	background-color: #333;
+	background-color: var(--main-black-color);
 	border-radius: 50%;
 	display: block;
 	position: absolute;
@@ -1064,7 +1064,7 @@ button.accordion.active:after {
 	border: 1px solid var(--main-yellow-color);
 	border-radius: 5px;
 	padding: 4.5px 4.5px 4.5px 10px;
-	background-color: #333;
+	background-color: var(--main-black-color);
 	outline: none;
 	font-size: 1.5rem;
 	color: var(--main-yellow-color);
@@ -1208,7 +1208,7 @@ button.accordion.active:after {
 	}
 }
 @media screen and (max-width: 770px){
-  .modal-panel input[type="image"] {
+  .modal-panel img {
 		display: block;
 	  width: 60%;
 	  height: auto;
@@ -1253,9 +1253,12 @@ button.accordion.active:after {
 	#solo-image img {
 		height: 155px;
 	}
-  .modal-panel input[type="image"] {
+	.modal-panel {
+		height: auto;
+	}
+  .modal-panel img {
 		display: block;
-	  width: 90%;
+	  width: 100%;
 	  height: auto;
 	  margin: auto;
 	}
@@ -1354,7 +1357,7 @@ button.accordion.active:after {
 	#sig-fig-field {
 		height: 35px;
 	}
-  .modal-panel input[type="image"] {
+  .modal-panel img {
 		display: block;
 	  width: 100%;
 	  height: auto;

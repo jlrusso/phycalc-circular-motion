@@ -217,7 +217,7 @@ function solveForBtnFunction(){
 	secondsBtn.checked = true;
 
 	function resetInputFields(){
-		angularVelocityField.placeholder = "ang. velocity " + omegaSymbol.textContent;
+		angularVelocityField.placeholder = "ang. velocity (" + omegaSymbol.textContent + ")";
 		radiusField.placeholder = "radius (r)";
 		periodField.placeholder = "period (T)";
 		sigFigsField.placeholder = "# of sigfigs (optional)";
@@ -340,7 +340,7 @@ function solveForBtnFunction(){
 
 
 	function clearFunc(){
-		angularVelocityField.placeholder = "ang. velocity " + omegaSymbol.textContent;
+		angularVelocityField.placeholder = "ang. velocity (" + omegaSymbol.textContent + ")";
 		radiusField.placeholder = "radius (r)";
 		periodField.placeholder = "period (T)";
 		for(let i = 0; i < inputFields.length; i++){

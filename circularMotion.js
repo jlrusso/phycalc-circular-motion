@@ -245,7 +245,6 @@ function solveForBtnFunction(){
 				angularVelocityField.classList.add("yellow-outline");
 				currentSlideIndex = 0;
 				switchToSlide();
-
 				revolutionBtn.disabled = true;
 			break;
 			case (solvePeriod.checked):
@@ -295,8 +294,8 @@ function solveForBtnFunction(){
 				function setTempOmega(){
 					var tempAngularVelocity = (2 * Math.PI * radiusField.value) / periodField.value;
 					function setFinalOmega(){
-						if(tempAngularVelocity.toString().length > 9){
-							angularVelocityField.value = tempAngularVelocity.toPrecision(sigFigsField.value || 9) + " " + (chosenUnit || " ") + "/" + (chosenTimeUnit || "s");
+						if(tempAngularVelocity.toString().length > 5){
+							angularVelocityField.value = tempAngularVelocity.toPrecision(sigFigsField.value || 5) + " " + (chosenUnit || " ") + "/" + (chosenTimeUnit || "s");
 						} else {
 							angularVelocityField.value = tempAngularVelocity.toPrecision(sigFigsField.value || tempAngularVelocity.toString().length) + " " + (chosenUnit || " ") + "/" + (chosenTimeUnit || "s");
 						}
@@ -309,8 +308,8 @@ function solveForBtnFunction(){
 				function setTempRadius(){
 					var tempRadius = (angularVelocityField.value * periodField.value) / (2 * Math.PI);
 					function setFinalRadius(){
-						if(angularVelocityField.toString().length > 9){
-							radiusField.value = tempRadius.toPrecision(sigFigsField.value || 9) + " " + chosenUnit;
+						if(angularVelocityField.toString().length > 5){
+							radiusField.value = tempRadius.toPrecision(sigFigsField.value || 5) + " " + chosenUnit;
 						} else {
 							radiusField.value = tempRadius.toPrecision(sigFigsField.value || tempRadius.toString().length) + " " + chosenUnit;
 						}
@@ -323,8 +322,8 @@ function solveForBtnFunction(){
 				function setTempPeriod(){
 					var tempPeriod = (2 * Math.PI * radiusField.value) / angularVelocityField.value;
 					function setFinalPeriod(){
-						if(tempPeriod.toString().length > 9){
-							periodField.value = tempPeriod.toPrecision(sigFigsField.value || 9) + " " + (chosenTimeUnit || " " ) + "/rev";
+						if(tempPeriod.toString().length > 5){
+							periodField.value = tempPeriod.toPrecision(sigFigsField.value || 5) + " " + (chosenTimeUnit || " " ) + "/rev";
 						} else {
 							periodField.value = tempPeriod.toPrecision(sigFigsField.value || tempPeriod.toString().length) + " rev/" + (chosenTimeUnit || " ");
 						}
@@ -360,6 +359,9 @@ function solveForBtnFunction(){
 		}
 
 		for(let i = 0; i < unitBtns.length; i++){
+      if(unitBtns[i].disabled){
+        unitBtns[i].disabled = false;
+      }
 			if(unitBtns[i].checked){
 				unitBtns[i].checked = false;
 			}

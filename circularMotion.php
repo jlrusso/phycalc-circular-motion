@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PhyCalc | Circular Motion</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="description" content="Here, we cover the aspects of circular motion: period, angular velocity, frequency, and enable you to solve your own practice problems">
+	<title>IP | Circular Motion</title>
+	<link rel="shortcut icon" href="/img/ip-logo.ico" type="image/ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -14,7 +16,7 @@
 <body>
 
 	<?php
-		include_once "navSearch.php";
+		include_once "nav-template.php";
 	?>
 
 	<section id="main-content">
@@ -128,11 +130,11 @@
 									</div>
 									<div id="outer-image-container">
 										<div id="inner-image-container">
-											<img src="../img/circular-equation-one.png" class="img-responsive slide" alt="Angular Velocity"/>
-											<img src="../img/circular-equation-two.png" class="img-responsive slide" alt="Period"/>
-											<img src="../img/circular-equation-three.png" class="img-responsive slide" alt="Radius"/>
-											<img src="../img/circular-frequency-equation.png" class="img-responsive slide" alt="Frequency"/>
-											<img src="../img/circular-period-equation.png" class="img-responsive slide" alt="Period"/>
+											<img src="../img/circular-equation-one.PNG" class="img-responsive slide" alt="Angular Velocity"/>
+											<img src="../img/circular-equation-two.PNG" class="img-responsive slide" alt="Period"/>
+											<img src="../img/circular-equation-three.PNG" class="img-responsive slide" alt="Radius"/>
+											<img src="../img/circular-frequency-equation.PNG" class="img-responsive slide" alt="Frequency"/>
+											<img src="../img/circular-period-equation.PNG" class="img-responsive slide" alt="Period"/>
 										</div>
 										<div id="slide-bar-indicators">
 											<div class="slide-bar"></div>
@@ -143,7 +145,7 @@
 										</div>
 									</div>
 									<div id="solo-image">
-										<img src="../img/circular-motion-solo-pic.png" class="img-responsive" alt="Acceleration Graph"/>
+										<img src="../img/circular-motion-solo-pic.PNG" class="img-responsive" alt="Acceleration Graph"/>
 									</div>
 								</div>
 							</div>
@@ -189,7 +191,7 @@
 								</div>
 							</div>
 							<div class="module-img">
-								<img src="../img/circular-module-image.png" class="img-responsive" alt="Circular Motion Diagram">
+								<img src="../img/circular-module-image.PNG" class="img-responsive" alt="Circular Motion Diagram">
 							</div>
 						</div>
 					</div>
@@ -246,10 +248,6 @@
 									</p>
 								</div>
 							</div>
-							<button class="accordion"><strong>Illustration</strong></button>
-							<div class="modal-panel">
-								<img src="img/circularMotionAccordionImg1.png" class="img-responsive"/>
-							</div>
 							<button class="accordion"><strong>Given Variables</strong></button>
 							<div class="modal-panel">
 								<p>
@@ -263,6 +261,10 @@
 										<li><b>Radius 40 mm from Edge</b> : 0.04 m</li>
 									</ul>
 								</p>
+							</div>
+							<button class="accordion"><strong>Illustration</strong></button>
+							<div class="modal-panel">
+								<img src="img/circularMotionAccordionImg1.PNG" class="img-responsive"/>
 							</div>
 							<button class="accordion last-accordion"><strong>Solution:</strong></button>
 							<div class="modal-panel">
@@ -298,10 +300,6 @@
 									The diameter of the London Eye ferris wheel is about 120 meters and completes one revolution in 30 minutes. What is the frequency in revolutions per second and how fast are the capsules at the edge going?
 									</p>
 								</div>
-								<button class="accordion"><strong>Illustration</strong></button>
-								<div class="modal-panel">
-									<img src="img/circularMotionAccordionImg2.png" class="img-responsive"/>
-								</div>
 								<button class="accordion"><strong>Given Variables</strong></button>
 								<div class="modal-panel">
 									<p>
@@ -312,6 +310,10 @@
 											<li><b>One Revolution</b> : 1 rev / 30 minutes</li>
 										</ul>
 									</p>
+								</div>
+								<button class="accordion"><strong>Illustration</strong></button>
+								<div class="modal-panel">
+									<img src="img/circularMotionAccordionImg2.PNG" class="img-responsive"/>
 								</div>
 								<button class="accordion last-accordion"><strong>Solution</strong></button>
 								<div class="modal-panel">
@@ -348,10 +350,6 @@
 										A child is spinning on a roundabout with an angular velocity of 6.7 m/s. If the diameter of the roundabout is 3.6 meters what would we the period (T) in seconds per revolution?
 									</p>
 								</div>
-								<button class="accordion"><strong>Illustration</strong></button>
-								<div class="modal-panel">
-									<img src="img/circularMotionAccordionImg3.png" class="img-responsive"/>
-								</div>
 								<button class="accordion"><strong>Given Variables</strong></button>
 								<div class="modal-panel">
 									<p>
@@ -362,6 +360,10 @@
 											<li><b>Angular Velocity:</b> 6.7 m/s</li>
 										</ul>
 									</p>
+								</div>
+								<button class="accordion"><strong>Illustration</strong></button>
+								<div class="modal-panel">
+									<img src="img/circularMotionAccordionImg3.PNG" class="img-responsive"/>
 								</div>
 								<button class="accordion last-accordion"><strong>Solution</strong></button>
 								<div class="modal-panel">
@@ -420,7 +422,7 @@
 				<div class="pages-nav" id="bottom-pager">
 					<ul class="pager">
 						<li><a href="kinematics.php" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Kinematics Big Five</a></li>
-						<li><a href="oneDimensionalforces.php" class="next-page-btn">Next: Forces<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+						<li><a href="forces.php" class="next-page-btn">Next: Forces<span class="glyphicon glyphicon-chevron-right"></span></a></li>
 					</ul>
 				</div>
 			</div>
